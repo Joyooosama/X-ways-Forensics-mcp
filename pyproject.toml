@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "xwf-mcp"
-version = "0.1.0"
+version = "1.0.0"
 description = "MCP server that wraps X-Ways Forensics 20.0 CLI/.whs automation."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -18,4 +18,3 @@ xwf-mcp = "xwf_mcp.server:main"
 
 [tool.setuptools.packages.find]
 include = ["xwf_mcp*"]
-
