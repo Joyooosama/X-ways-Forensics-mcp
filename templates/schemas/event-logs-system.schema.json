@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/event-logs-system.schema.json",
+  "title": "XWF System Event Logs Export",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": ["integer", "string", "null"]
+    },
+    "provider": {
+      "type": ["string", "null"]
+    },
+    "channel": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "message": {
+      "type": ["string", "null"]
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

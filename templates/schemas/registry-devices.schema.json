@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/registry-devices.schema.json",
+  "title": "XWF Registry Devices Export",
+  "type": "object",
+  "properties": {
+    "device_name": {
+      "type": ["string", "null"]
+    },
+    "friendly_name": {
+      "type": ["string", "null"]
+    },
+    "class": {
+      "type": ["string", "null"]
+    },
+    "last_connected_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "serial_number": {
+      "type": ["string", "null"]
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

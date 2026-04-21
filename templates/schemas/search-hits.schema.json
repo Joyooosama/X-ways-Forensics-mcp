@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/search-hits.schema.json",
+  "title": "XWF Search Hits",
+  "type": "object",
+  "properties": {
+    "term": {
+      "type": ["string", "null"]
+    },
+    "name": {
+      "type": ["string", "null"]
+    },
+    "path": {
+      "type": ["string", "null"]
+    },
+    "evidence_object": {
+      "type": ["string", "null"]
+    },
+    "volume": {
+      "type": ["string", "null"]
+    },
+    "offset": {
+      "type": ["integer", "string", "null"]
+    },
+    "size": {
+      "type": ["integer", "string", "null"]
+    },
+    "context": {
+      "type": ["string", "null"]
+    },
+    "reported_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}
+

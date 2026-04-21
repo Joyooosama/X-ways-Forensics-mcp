@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/encrypted-files.schema.json",
+  "title": "XWF Encrypted Files",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": ["string", "null"]
+    },
+    "path": {
+      "type": ["string", "null"]
+    },
+    "reason": {
+      "type": ["string", "null"]
+    },
+    "container_type": {
+      "type": ["string", "null"]
+    },
+    "evidence_object": {
+      "type": ["string", "null"]
+    },
+    "volume": {
+      "type": ["string", "null"]
+    },
+    "size": {
+      "type": ["integer", "string", "null"]
+    },
+    "reported_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}
+

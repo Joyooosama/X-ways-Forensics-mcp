@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/registry-system.schema.json",
+  "title": "XWF Registry System Export",
+  "type": "object",
+  "properties": {
+    "key_path": {
+      "type": ["string", "null"]
+    },
+    "value_name": {
+      "type": ["string", "null"]
+    },
+    "value_data": {
+      "type": ["string", "null"]
+    },
+    "timestamp": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "source_hive": {
+      "type": ["string", "null"]
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

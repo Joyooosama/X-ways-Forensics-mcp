@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/sunlogin-logs.schema.json",
+  "title": "Sunlogin Logs Export",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "line": {
+      "type": ["string", "null"]
+    },
+    "remote_ip": {
+      "type": ["string", "null"]
+    },
+    "remote_port": {
+      "type": ["integer", "string", "null"]
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

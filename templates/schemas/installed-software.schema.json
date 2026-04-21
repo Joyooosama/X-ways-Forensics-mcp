@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.xwf-mcp/schemas/installed-software.schema.json",
+  "title": "XWF Installed Software Export",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": ["string", "null"]
+    },
+    "display_name": {
+      "type": ["string", "null"]
+    },
+    "version": {
+      "type": ["string", "null"]
+    },
+    "publisher": {
+      "type": ["string", "null"]
+    },
+    "install_location": {
+      "type": ["string", "null"]
+    },
+    "install_time": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "_source_file": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}
